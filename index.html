@@ -3,26 +3,31 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Funny Username Generator</title>
+<title>Funny Username Generator V0.2</title>
 <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+<button id="darkModeToggle" aria-label="Toggle dark mode">🌙</button>
 
-<button id="themeToggle" title="Toggle Light/Dark Mode">🌙</button>
+<header>
+  <h1>Funny Username Generator V0.3</h1>
+</header>
 
-<h1>Funny Username Generator</h1>
+<div class="form-container">
+  <label for="firstName">First Name:</label>
+  <input type="text" id="firstName" autocomplete="off" />
+  <label for="lastName">Last Name:</label>
+  <input type="text" id="lastName" autocomplete="off" />
+  <button id="generateBtn">Generate Username</button>
+</div>
 
-<label for="firstName">First Name:</label>
-<input type="text" id="firstName" placeholder="Enter your first name" />
+<p id="result"></p>
 
-<label for="lastName">Last Name:</label>
-<input type="text" id="lastName" placeholder="Enter your last name" />
+<div id="mouseEffect"></div>
 
-<button onclick="generateUsername()">Generate Username V0.2</button>
-
-<div id="result"></div>
-
-<div id="cursorFollower"></div>
+<footer>
+  <div class="scrolling-usernames" aria-label="Previously generated usernames"></div>
+</footer>
 
 <script src="script.js"></script>
 </body>
