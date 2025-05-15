@@ -137,3 +137,19 @@ body.dark footer {
   background: #222;
   color: #ccc;
 }
+
+/* Küçük ekranlar için responsive form düzeni */
+@media (max-width: 600px) {
+  .form-container label,
+  .form-container input,
+  .form-container button {
+    display: block;
+    width: 80%;
+    max-width: 300px;
+    margin: 0.5rem auto;
+  }
+  
+  .form-container input {
+    margin-bottom: 1rem;
+  }
+}
