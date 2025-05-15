@@ -22,9 +22,6 @@ A simple and fun web app that creates random funny usernames based on your first
 2. Open `index.html` in any modern web browser
 3. Enjoy generating funny usernames!
 
-## Demo:
-[Your GitHub Pages URL here]  
-*(Replace this with your actual published URL)*
 
 ---
 
