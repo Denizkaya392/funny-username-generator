@@ -1,86 +1,58 @@
 body {
-  background-color: #f0f8ff;
+  background-color: white;
+  color: black;
   font-family: Arial, sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+  padding: 2rem;
+  transition: background-color 0.3s, color 0.3s;
 }
-
-.container {
-  text-align: center;
-  background: white;
-  padding: 30px;
-  border-radius: 20px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-input {
-  padding: 10px;
-  margin: 10px;
-  width: 200px;
-  border-radius: 8px;
-  border: 1px solid #ccc;
-}
-
-button {
-  padding: 10px 20px;
-  background: #0077cc;
+body.dark {
+  background-color: #121212;
   color: white;
-  border: none;
-  border-radius: 8px;
+}
+label {
+  display: block;
+  margin-top: 1rem;
+}
+input {
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+  width: 200px;
+}
+button {
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
   cursor: pointer;
 }
-
-button:hover {
-  background: #005fa3;
-}
-
 #result {
-  margin-top: 20px;
-  font-size: 20px;
-  color: #333;
+  margin-top: 1.5rem;
+  font-weight: bold;
+  font-size: 1.2rem;
 }
-body {
-  background-color: #f0f8ff;
-  font-family: Arial, sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-
-.container {
-  text-align: center;
-  background: white;
-  padding: 30px;
-  border-radius: 20px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-input {
-  padding: 10px;
-  margin: 10px;
-  width: 200px;
-  border-radius: 8px;
-  border: 1px solid #ccc;
-}
-
-button {
-  padding: 10px 20px;
-  background: #0077cc;
-  color: white;
+#themeToggle {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 10000;
+  background: none;
   border: none;
-  border-radius: 8px;
+  font-size: 1.5rem;
   cursor: pointer;
 }
-
-button:hover {
-  background: #005fa3;
+#cursorFollower {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background-color: rgba(0,0,0,0.5);
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: background-color 0.3s;
+  z-index: 9999;
 }
-
-#result {
-  margin-top: 20px;
-  font-size: 20px;
-  color: #333;
+body.dark #cursorFollower {
+  background-color: rgba(255,255,255,0.7);
 }

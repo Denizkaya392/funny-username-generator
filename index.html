@@ -1,20 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Funny Username Generator</title>
-  <link rel="stylesheet" href="style.css" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Funny Username Generator</title>
+<link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="container">
-    <h1>😂 Funny Username Generator V0.1</h1>
-    <input type="text" id="firstName" placeholder="First Name" />
-    <input type="text" id="lastName" placeholder="Last Name" />
-    <button onclick="generateUsername()">Generate</button>
-    <p id="result"></p>
-  </div>
 
-  <script src="script.js"></script>
+<button id="themeToggle" title="Toggle Light/Dark Mode">🌙</button>
+
+<h1>Funny Username Generator</h1>
+
+<label for="firstName">First Name:</label>
+<input type="text" id="firstName" placeholder="Enter your first name" />
+
+<label for="lastName">Last Name:</label>
+<input type="text" id="lastName" placeholder="Enter your last name" />
+
+<button onclick="generateUsername()">Generate Username V0.2</button>
+
+<div id="result"></div>
+
+<div id="cursorFollower"></div>
+
+<script src="script.js"></script>
 </body>
 </html>
